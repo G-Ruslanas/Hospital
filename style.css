@@ -1,0 +1,368 @@
+
+.container
+{
+    text-align: center;
+    align-items: center;
+    width: 370px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 15px;
+    border: 3px solid black;
+}
+
+.container img
+{
+    width: 300px;
+}
+
+.option
+{
+    display: block;
+    padding: 10px;
+    background-color: #a13636;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+
+   
+}
+
+.option:hover
+{
+    background-color: #cc6666;
+    color: white;
+}
+
+.alert
+{
+    color: red;
+}
+
+.content
+{
+    text-align: center;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.content-doctors
+{
+    text-align: center;
+    align-items: center;
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.content-doctors{
+    background: white;
+
+}
+
+/*.content img*/
+/*{*/
+/*    width: 80%;*/
+/*  */
+/*}*/
+
+.searchbox
+{
+    width: 250px;
+    border: 2px solid black;
+    padding: 2px;
+    float: left;
+    background: white;
+}
+
+.navi
+{
+    width: auto;
+    text-align: center;
+   
+    
+    
+}
+
+ul.navigation{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+.photo
+{
+    width: 996px;
+    text-align: center;
+    min-height: 50px;
+    border: 2px solid black;
+}
+
+.results
+{
+    border: 2px solid black;
+    width: 738px;
+    height: 268px;
+    float: right;
+    background: white;
+}
+.zinute{
+    margin: 15px 0 0;
+    color: #ec3e13;
+    font-size: 12px;
+
+
+}
+
+.personal
+{
+    float: left;
+    width: 30%;
+    border: 2px solid black;
+    margin: 3px;
+    height: 200px;
+}
+
+.mainpage
+{
+    border-right: 2px solid black;
+   
+    width: 68%;
+    min-height: 500px;
+    float: left;
+}
+/*LOGIN*/
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form .first{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form .second {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #B22222;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+    background: #a13636;
+}
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+.form .message a {
+    color: #ec3e13;
+    text-decoration: none;
+}
+body {
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #cc6666, #a13636);
+    background: -moz-linear-gradient(right, #cc6666, #a13636);
+    background: -o-linear-gradient(right, #cc6666, #a13636);
+    background: linear-gradient(to left, #cc6666, #a13636);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*LOGIN*/
+/*REGISTER*/
+.register-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+/*REGISTER*/
+/*PATIENT PAGE*/
+patient-page {
+    width: 1000px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+.card {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 1000px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.patient-info-card {
+    border: 8px solid;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 80%;
+    margin: 0 auto 50px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.navas a {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #B22222;
+    /*width: 100px;*/
+    height: 15px;
+    border: 0px;
+    padding: 12px;
+    color: #FFFFFF;
+    font-size: 12px;
+    -webkit-transition: all .3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    display: inline-flex;
+    text-align: center;
+    text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.navas a:hover{
+	background-color: #B25B5B;
+}
+
+.navas{
+    padding: 5px;
+	
+
+}
+.card input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 25%;
+    margin: 0 0 15px;
+    padding: 15px;
+
+}
+/*PATIENT PAGE*/
+/*MAIN PAGE*/
+.content{
+   background: white;
+   
+}
+/*MAIN PAGE*/
+
+/*Doctors*/
+.table-doctors {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 600px;
+    position: relative;
+    left:2%;
+}
+
+.table-doctors th,
+.table-doctors td {
+    padding: 12px 15px;
+}
+
+.table-doctors thead tr {
+    background-color: red;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table-doctors tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table-doctors tbody tr:last-of-type{
+    border-bottom: 2px solid red;
+
+}
+/*DOCTORS CARD*/
+.doctors-table tbody td{
+    border-bottom: 2px solid red;
+}
+
+.doctors-table thead tr {
+    background-color: red;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.doctors-table th,
+.doctors-table td {
+    padding: 12px 15px;
+}
+/*Patient Card*/
+.patient-table tbody td{
+    border-bottom: 2px solid red;
+}
+
+.patient-table thead tr {
+    background-color: red;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.patient-table th,
+.patient-table td {
+    padding: 12px 15px;
+}
+
+
+
+
