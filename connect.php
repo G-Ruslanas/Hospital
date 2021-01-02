@@ -1,6 +1,6 @@
 <?php
-	$host="localhost";
-	$db_user="root";
-	$db_password="";
+	$host="10.0.1.152";
+	$db_user="ruga";
+	$db_password="abc123";
 	$db_name="hospital";
 ?>
