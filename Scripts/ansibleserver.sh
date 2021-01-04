@@ -18,7 +18,7 @@ CVMREZ=$(onetemplate instantiate $TEMPLATE --user $CUSER --password $CPASS --nam
 CVMID=$(echo $CVMREZ |cut -d ' ' -f 3)
 echo $CVMID
 echo "Waiting for VM to RUN 60sec."
-sleep 60
+sleep 20
 $(onevm show $CVMID --user $CUSER --password $CPASS --endpoint $CENDPOINT > $DIRECTORY/$CVMID.txt)
 CSSH_CON=$(cat $DIRECTORY/$CVMID.txt | grep CONNECT\_INFO1| cut -d '=' -f 2 | tr -d '"'|sed 's/'$CUSER'/root/')
 CSSH_PRIP=$(cat $DIRECTORY/$CVMID.txt | grep PRIVATE\_IP| cut -d '=' -f 2 | tr -d '"')
