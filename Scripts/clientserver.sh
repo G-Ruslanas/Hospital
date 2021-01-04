@@ -14,7 +14,7 @@ stty -echo
 read CPASS
 stty echo
 CENDPOINT=https://grid5.mif.vu.lt/cloud3/RPC2
-CVMREZ=$(onetemplate instantiate $TEMPLATE --user $CUSER --password $CPASS --name client-vm --endpoint $CENDPOINT)
+CVMREZ=$(onetemplate instantiate $TEMPLATE --user $CUSER --password $CPASS --name db-vm --endpoint $CENDPOINT)
 CVMID=$(echo $CVMREZ |cut -d ' ' -f 3)
 echo $CVMID
 echo "Waiting for VM to RUN 60sec."
