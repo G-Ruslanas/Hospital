@@ -1,0 +1,44 @@
+- hosts: dbserver
+  sudo: yes
+  tasks:
+  - name: Install MySql and packages
+    apt: name={{ item }} update_cache=yes state=latest
+    with_items:
+      - mysql-server
+      - mysql-client
+      - php5-mysql
+      - python-mysqldb
+      - makepasswd
+  - name: Delete hospital.sql file
+    file:                                                                                                                    
+     path: /root/hospital.sql
+     state: absent
+  - name: Copy .sql file from github repo
+    command: wget https://raw.githubusercontent.com/G-Ruslanas/Hospital/main/hospital.sql
+  - name: Delete old database
+    mysql_db:
+     name: hospital
+     state: absent
+  - name: Create new database
+    mysql_db:
+     name: hospital
+     state: present
+  - name: Create database user with name 'ruga' and password 'abc123' with all database privileges
+    mysql_user:
+     name: ruga
+     password: abc123
+     priv: 'hospital.*: ALL,GRANT'
+     host: 10.0.0.93
+     state: present
+  - name: Import file to database
+    shell: mysql hospital < hospital.sql
+  - name: Change bind-address to 0.0.0.0
+    replace:
+      dest: /etc/mysql/my.cnf
+      regexp: '127.0.0.1'
+      replace: '0.0.0.0'
+      backup: yes
+  - name: Restart mysql
+    service: name=mysql
+             enabled=yes
+             state=restarted
