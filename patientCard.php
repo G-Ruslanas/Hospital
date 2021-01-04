@@ -69,6 +69,7 @@ if(!isset($_SESSION['username'])){
                         <thead>
                         <th>Vardas</th>
                         <th>Pavarde</th>
+                        <th>Profesija</th>
                         <th>Data</th>
                         <th>Laikas</th>
                         <th>Registracijos atšaukimas</th>
@@ -82,6 +83,7 @@ if(!isset($_SESSION['username'])){
                     <tr>
                         <td><?php echo $row['username']?></td>
                         <td><?php echo $row['lastname']?></td>
+                        <td><?php echo $row['profession']?></td>
                         <td><?php echo $row['date']?></td>
                         <td><?php echo $row['time']?></td>
                         <?php
