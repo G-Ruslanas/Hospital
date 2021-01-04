@@ -4,7 +4,7 @@ apt-get install -y
 apt-get install gnupg gnupg2 gnupg1 -y
 wget -q -O- https://downloads.opennebula.org/repo/repo.key | sudo apt-key add -
 echo "deb https://downloads.opennebula.org/repo/5.6/Ubuntu/18.04 stable opennebula" | sudo tee /etc/apt/sources.list.d/opennebula.list
-apt update
+apt-get update
 apt-get install opennebula-tools
 apt-get dist-upgrade -y
 CUSER=ruga6338
@@ -14,7 +14,7 @@ stty -echo
 read CPASS
 stty echo
 CENDPOINT=https://grid5.mif.vu.lt/cloud3/RPC2
-CVMREZ=$(onetemplate instantiate $TEMPLATE --user $CUSER --password $CPASS --name db-vm --endpoint $CENDPOINT)
+CVMREZ=$(onetemplate instantiate $TEMPLATE --user $CUSER --password $CPASS --name client-vm --endpoint $CENDPOINT)
 CVMID=$(echo $CVMREZ |cut -d ' ' -f 3)
 echo $CVMID
 echo "Waiting for VM to RUN 20sec."
