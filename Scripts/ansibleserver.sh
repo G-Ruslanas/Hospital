@@ -29,3 +29,4 @@ ssh-add
 #echo "Will delete VM $CVMID"
 #$(onevm delete $CVMID --user $CUSER --password $CPASS --endpoint $CENDPOINT )
 exit 0
+
