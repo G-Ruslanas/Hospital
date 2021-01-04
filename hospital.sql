@@ -43,10 +43,10 @@ CREATE TABLE `registrations` (
 --
 
 INSERT INTO `registrations` (`registration_id`, `user_id`, `doctor_id`, `username`, `lastname`, `profession`, `date`, `time`) VALUES
-(1096, 15, 13, 'Ruslanas', 'Gailiušas', 'Chirurgas', '2020-12-15', '11:44'),
-(1104, 15, 18, 'Ruslanas', 'Gailiušas', 'Odontologija', '2020-12-26', '12:58'),
-(1105, 18, 13, 'Ruslanas', 'Gailiušas', 'Chirurgas', '2020-12-02', '16:04'),
-(1106, 18, 18, 'Ruslanas', 'Gailiušas', 'Odontologija', '2020-12-17', '10:05');
+(1096, 15, 13, 'Ruslanas', 'Gailiusas', 'Chirurgas', '2020-12-15', '11:44'),
+(1104, 15, 18, 'Ruslanas', 'Gailiusas', 'Odontologija', '2020-12-26', '12:58'),
+(1105, 18, 13, 'Ruslanas', 'Gailiusas', 'Chirurgas', '2020-12-02', '16:04'),
+(1106, 18, 18, 'Ruslanas', 'Gailiusas', 'Odontologija', '2020-12-17', '10:05');
 
 -- --------------------------------------------------------
 
@@ -71,11 +71,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `lastname`, `email`, `password`, `avatar`, `profession`, `dkey`, `card_id`) VALUES
-(13, 'Ruslanas', 'Gailiušas', 'ruslan.gas@gmail.com', '52db7d1846c0cc90c09e1a144cfce606', 'images/naujas.jpg', 'Chirurgas', 'raktas', 0),
+(13, 'Ruslanas', 'Gailiusas', 'ruslan.gas@gmail.com', '52db7d1846c0cc90c09e1a144cfce606', 'images/naujas.jpg', 'Chirurgas', 'raktas', 0),
 (15, 'Gustas', 'Zolba', 'zolba@gmail.com', '52db7d1846c0cc90c09e1a144cfce606', 'images/naujas.jpg', '', '', 159085),
 (16, 'Rafal', 'Kadzevic', 'kadzewiczrafal@gmail.com', 'd18d0079b437c941a4bb35c336350952', 'images/32815899_1527644997362438_2539246066247663616_n.jpg', 'Chirurgas', 'raktas', 0),
 (17, 'Raf', 'kadz', 'raf@gmail.com', 'd18d0079b437c941a4bb35c336350952', 'images/32815899_1527644997362438_2539246066247663616_n.jpg', '', NULL, 0),
-(18, 'Ruslanas', 'Gailiušas', 'Neziniukas369@gmail.com', '92e3c5a30164653fd79ee45c1d92d244', 'images/IMG_20200925_124800cp.jpg', 'Odontologija', 'raktas', 189950),
+(18, 'Ruslanas', 'Gailiusas', 'Neziniukas369@gmail.com', '92e3c5a30164653fd79ee45c1d92d244', 'images/IMG_20200925_124800cp.jpg', 'Odontologija', 'raktas', 189950),
 (22, 'admin', 'admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'images/download.png', '', NULL, 229693);
 
 --
