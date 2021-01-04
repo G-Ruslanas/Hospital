@@ -44,9 +44,7 @@ CREATE TABLE `registrations` (
 
 INSERT INTO `registrations` (`registration_id`, `user_id`, `doctor_id`, `username`, `lastname`, `profession`, `date`, `time`) VALUES
 (1096, 15, 13, 'Ruslanas', 'Gailiusas', 'Chirurgas', '2020-12-15', '11:44'),
-(1104, 15, 18, 'Ruslanas', 'Gailiusas', 'Odontologija', '2020-12-26', '12:58'),
-(1105, 18, 13, 'Ruslanas', 'Gailiusas', 'Chirurgas', '2020-12-02', '16:04'),
-(1106, 18, 18, 'Ruslanas', 'Gailiusas', 'Odontologija', '2020-12-17', '10:05');
+(1104, 15, 18, 'Ruslanas', 'Gailiusas', 'Odontologija', '2020-12-26', '12:58');
 
 -- --------------------------------------------------------
 
