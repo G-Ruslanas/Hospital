@@ -1,4 +1,4 @@
-  GNU nano 4.8                                                                                         client.sh                                                                                                   #!/bin/sh
+#!/bin/sh
 apt-get update
 apt-get install -y
 apt-get install gnupg gnupg2 gnupg1 -y
