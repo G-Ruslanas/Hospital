@@ -17,7 +17,7 @@ CENDPOINT=https://grid5.mif.vu.lt/cloud3/RPC2
 CVMREZ=$(onetemplate instantiate $TEMPLATE --user $CUSER --password $CPASS --name ansible-vm --endpoint $CENDPOINT)
 CVMID=$(echo $CVMREZ |cut -d ' ' -f 3)
 echo $CVMID
-echo "Waiting for VM to RUN 60sec."
+echo "Waiting for VM to RUN 20sec."
 sleep 20
 $(onevm show $CVMID --user $CUSER --password $CPASS --endpoint $CENDPOINT > $DIRECTORY/$CVMID.txt)
 CSSH_CON=$(cat $DIRECTORY/$CVMID.txt | grep CONNECT\_INFO1| cut -d '=' -f 2 | tr -d '"'|sed 's/'$CUSER'/root/')
