@@ -48,13 +48,11 @@
 //           {
 //             $_SESSION['message']="Vartotojas negali buti pridetas!";
 //           }
-
-        }
-        else
-        {
-          $_SESSION['message']="Pasirinktas netinkamas failas!";
-        }
-
+//         }
+//         else
+//         {
+//           $_SESSION['message']="Pasirinktas netinkamas failas!";
+//         }
       }
       else
       {
