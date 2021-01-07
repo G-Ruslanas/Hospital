@@ -30,8 +30,8 @@
       if(preg_match("!image!", $_FILES['avatar']['type']))
       {
         //copy image to images/ folder
-        if(copy($_FILES['avatar']['tmp_name'], $avatar_path))
-        {
+//         if(copy($_FILES['avatar']['tmp_name'], $avatar_path))
+//         {
           $_SESSION['username']=$username;
           $_SESSION['avatar']=$avatar_path;
 
@@ -44,10 +44,10 @@
             $_SESSION['message']="Registracija uzbaigta $username !";
             header("Location: welcome.php");
           }
-          else
-          {
-            $_SESSION['message']="Vartotojas negali buti pridetas!";
-          }
+//           else
+//           {
+//             $_SESSION['message']="Vartotojas negali buti pridetas!";
+//           }
 
         }
         else
